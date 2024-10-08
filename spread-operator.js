@@ -1,14 +1,11 @@
-const names = ["Mike", "John", "Moses", "Devil"];
-
-const newNames = [...names];
-newNames.push("Chima");
-console.log(newNames);
+// Object Spread OP
 
 const userLocation = {
   city: "abuja",
   country: "Nigeria",
   placeOfResidence: "Wuse",
 };
+
 const userGMC = {
   name: "Ability",
   age: 20,
@@ -17,3 +14,12 @@ const userGMC = {
 };
 
 console.log(userGMC);
+
+// Array Spread OP
+
+const maleNames = ["Mike", "John", "Moses", "Devil"];
+const femalesNames = ["Joy", "Ann", "Peace", "Osas"];
+
+const mixNames = [...maleNames, ...femalesNames];
+console.log("Hi" + " " + [...mixNames.map((name) => name)]);
+console.log(mixNames);
